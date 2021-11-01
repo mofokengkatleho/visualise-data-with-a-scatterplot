@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: #dff9fb;
+}
+
+h1 {
+  margin-top: -40px;
+}
+
+svg {
+  border: 6px solid skyblue;
+  box-shadow: 12px 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: #def;
+  border-radius: 6%
+}
+
+.container {
+  position: relative;
+}
+
+.tooltip {
+  box-shadow: 9px 4px 6px rgba(0, 0, 0, 0.7);
+  display: none;
+  font-size: 14px;
+}
+
+.tooltip.show {
+  display: flex;
+}
+
+
+
+
+.legend {
+  font-size: 12px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: left;
+}
+
+.legend .text {
+  position: relative;
+  padding-right: 25px;
+  margin: 15px;
+}
+
+.legend .box {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: -3px;
+  right: 0;
+}
+
+.legend .box.sunflower {
+  background-color: #f1c40f;
+}
+
+.legend .box.turquoise {
+  background-color: #1abc9c;
+}
